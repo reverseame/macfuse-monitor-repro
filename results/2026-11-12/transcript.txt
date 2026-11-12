@@ -1,0 +1,69 @@
+
+== sanity: libfuse 550
+   mounted ~/macfuse-monitor-repro/mnt-550 (pid 98313, debug log logs/550-sanity.log)
+   -> OK: write, read, list, remove a file
+   -> OK: umount
+   unmounted
+
+== sanity: libfuse 513
+   mounted ~/macfuse-monitor-repro/mnt-513 (pid 98356, debug log logs/513-sanity.log)
+   -> OK: write, read, list, remove a file
+   -> OK: umount
+   unmounted
+
+== leak: libfuse 550
+   mounted ~/macfuse-monitor-repro/mnt-550 (pid 98399, debug log logs/550-leak.log)
+   -> OK: create d/x
+kqwatch: 3 round(s) on 1 path(s)
+   -> OK: kqwatch: attach/detach a kqueue watch on d/x 3 times
+   log: MONITOR=6 FORGET=0 "QUEUE PATH"=0 "DEQUEUE"=0
+   -> OK: rm d/x (needs a write lock on x)
+   log: MONITOR=6 FORGET=0 "QUEUE PATH"=0 "DEQUEUE"=0
+   workers: blocked in pthread_cond_wait=0, reading /dev/macfuse=5, other=0
+   (fs pid 98399; stacks: logs/550-leak.sample.txt)
+   killed fs pid 98399
+   -> OK: umount -f
+   unmounted
+
+== leak: libfuse 513
+   mounted ~/macfuse-monitor-repro/mnt-513 (pid 98472, debug log logs/513-leak.log)
+   -> OK: create d/x
+kqwatch: 3 round(s) on 1 path(s)
+   -> OK: kqwatch: attach/detach a kqueue watch on d/x 3 times
+   log: MONITOR=6 FORGET=0 "QUEUE PATH"=0 "DEQUEUE"=0
+   -> HUNG (killed after 10s): rm d/x (needs a write lock on x)
+   log: MONITOR=6 FORGET=0 "QUEUE PATH"=1 "DEQUEUE"=0
+   QUEUE PATH 3 (w)
+   workers: blocked in pthread_cond_wait=1, reading /dev/macfuse=0, other=0
+   (fs pid 98472; stacks: logs/513-leak.sample.txt)
+   killed fs pid 98472
+   -> OK: umount -f
+   unmounted
+
+== wedge: libfuse 550, 24 files
+   mounted ~/macfuse-monitor-repro/mnt-550 (pid 98738, debug log logs/550-wedge.log)
+   -> OK: create 24 files
+kqwatch: 1 round(s) on 24 path(s)
+   -> OK: kqwatch: attach/detach a kqueue watch on each file
+   log: MONITOR=48 FORGET=0 "QUEUE PATH"=0 "DEQUEUE"=0
+   workers: blocked in pthread_cond_wait=0, reading /dev/macfuse=4, other=0
+   (fs pid 98738; stacks: logs/550-wedge.sample.txt)
+   -> OK: umount (the kernel reclaims every vnode: one FORGET each)
+   log: MONITOR=48 FORGET=24 "QUEUE PATH"=0 "DEQUEUE"=0
+   (fs process gone)
+   unmounted
+
+== wedge: libfuse 513, 24 files
+   mounted ~/macfuse-monitor-repro/mnt-513 (pid 98801, debug log logs/513-wedge.log)
+   -> OK: create 24 files
+kqwatch: 1 round(s) on 24 path(s)
+   -> OK: kqwatch: attach/detach a kqueue watch on each file
+   log: MONITOR=48 FORGET=0 "QUEUE PATH"=0 "DEQUEUE"=0
+   workers: blocked in pthread_cond_wait=0, reading /dev/macfuse=4, other=0
+   (fs pid 98801; stacks: logs/513-wedge.sample.txt)
+   -> HUNG (killed after 20s): umount (the kernel reclaims every vnode: one FORGET each)
+   log: MONITOR=48 FORGET=4 "QUEUE PATH"=4 "DEQUEUE"=0
+   workers: blocked in pthread_cond_wait=4, reading /dev/macfuse=0, other=0
+   (fs pid 98801; stacks: logs/513-wedge.sample.txt)
+   killed fs pid 98801
+   unmounted

@@ -1,0 +1,176 @@
+FUSE library version: 2.9.9
+nullpath_ok: 0
+nopath: 0
+utime_omit_ok: 0
+unique: 2, opcode: INIT (26), nodeid: 0, insize: 56, pid: 98361
+INIT: 7.19
+flags=0xef80040a
+max_readahead=0x00100000
+   INIT: 7.19
+   flags=0x00000010
+   max_readahead=0x00100000
+   max_write=0x02000000
+   max_background=0
+   congestion_threshold=0
+   unique: 2, success, outsize: 40
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98361
+statfs /
+   unique: 2, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98361
+statfs /
+   unique: 2, success, outsize: 96
+unique: 2, opcode: ACCESS (34), nodeid: 1, insize: 48, pid: 415
+access / 00
+   unique: 2, error: -78 (Function not implemented), outsize: 16
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 368
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 2, success, outsize: 96
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 610
+getattr /
+   unique: 3, success, outsize: 136
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 610
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 618
+statfs /
+   unique: 3, success, outsize: 96
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 626
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 626
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 705
+statfs /
+   unique: 3, success, outsize: 96
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 0
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 48, pid: 694
+LOOKUP /.hidden
+getattr /.hidden
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 4, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98373
+statfs /
+   unique: 4, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98375
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 42, pid: 98378
+LOOKUP /f
+getattr /f
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 4, opcode: CREATE (35), nodeid: 1, insize: 58, pid: 98378
+create flags: 0xa02 /f 0100644 umask=0000
+   create[0] flags: 0xa02 /f
+fgetattr[0] /f
+   NODEID: 2
+   unique: 4, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 2, insize: 86, pid: 98378
+write[0] 6 bytes to 0 flags: 0x1
+   write[0] 6 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: FLUSH (25), nodeid: 2, insize: 64, pid: 98378
+flush[0]
+lock[0] F_SETLK F_UNLCK start: 0 len: 0 pid: 0
+   unique: 3, error: -78 (Function not implemented), outsize: 16
+unique: 4, opcode: RELEASE (18), nodeid: 2, insize: 64, pid: 98378
+release[0] flags: 0x0
+   unique: 4, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 2, insize: 56, pid: 98378
+getattr /f
+   unique: 2, success, outsize: 136
+unique: 3, opcode: OPEN (14), nodeid: 2, insize: 48, pid: 98380
+open flags: 0x0 /f
+   open[0] flags: 0x0 /f
+   unique: 3, success, outsize: 32
+unique: 4, opcode: RELEASE (18), nodeid: 2, insize: 64, pid: 98380
+release[0] flags: 0x0
+   unique: 4, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98381
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: OPENDIR (27), nodeid: 1, insize: 48, pid: 98381
+opendir flags: 0x0 /
+   opendir[0] flags: 0x0 /
+   unique: 3, success, outsize: 32
+unique: 4, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98381
+readdir[0] from 0
+   unique: 4, success, outsize: 160
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 62, pid: 98381
+LOOKUP /.metadata_never_index
+getattr /.metadata_never_index
+   NODEID: 3
+   unique: 2, success, outsize: 160
+unique: 3, opcode: GETATTR (3), nodeid: 2, insize: 56, pid: 98381
+getattr /f
+   unique: 3, success, outsize: 136
+unique: 4, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98381
+   unique: 4, success, outsize: 16
+unique: 2, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98381
+   unique: 2, success, outsize: 16
+unique: 3, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98381
+   unique: 3, success, outsize: 16
+unique: 4, opcode: RELEASEDIR (29), nodeid: 1, insize: 64, pid: 98381
+releasedir[0] flags: 0x0
+   unique: 4, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98382
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: UNLINK (10), nodeid: 1, insize: 42, pid: 98382
+unlink /f
+   unique: 3, success, outsize: 16
+unique: 4, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98382
+getattr /
+   unique: 4, success, outsize: 136
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 42, pid: 340
+LOOKUP /f
+getattr /f
+   unique: 2, error: -2 (No such file or directory), outsize: 16
+unique: 3, opcode: FORGET (2), nodeid: 3, insize: 48, pid: 98383
+FORGET 3/1
+unique: 4, opcode: FORGET (2), nodeid: 2, insize: 48, pid: 98383
+FORGET 2/1
+unique: 2, opcode: DESTROY (38), nodeid: 1, insize: 40, pid: 98383
+DELETE: 3
+   unique: 2, success, outsize: 16
+DELETE: 2

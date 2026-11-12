@@ -1,0 +1,1099 @@
+FUSE library version: 2.9.9
+nullpath_ok: 0
+nopath: 0
+utime_omit_ok: 0
+fuse: forking a threaded process is unsafe, the child may crash or deadlock
+unique: 2, opcode: INIT (26), nodeid: 0, insize: 56, pid: 98743
+INIT: 7.19
+flags=0xef80040a
+max_readahead=0x00100000
+   INIT: 7.19
+   flags=0x00000010
+   max_readahead=0x00100000
+   max_write=0x02000000
+   max_background=0
+   congestion_threshold=0
+   unique: 2, success, outsize: 40
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98743
+statfs /
+   unique: 2, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98743
+statfs /
+   unique: 2, success, outsize: 96
+unique: 2, opcode: ACCESS (34), nodeid: 1, insize: 48, pid: 415
+access / 00
+   unique: 2, error: -78 (Function not implemented), outsize: 16
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 368
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 415
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 610
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 610
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 618
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 626
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 626
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 705
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 0
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 48, pid: 694
+LOOKUP /.hidden
+getattr /.hidden
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 693
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98755
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98757
+statfs /
+   unique: 2, success, outsize: 96
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f01
+getattr /f01
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f01 0100644 umask=0000
+   create[0] flags: 0xa02 /f01
+fgetattr[0] /f01
+   NODEID: 2
+   unique: 2, success, outsize: 176
+unique: 3, opcode: WRITE (16), nodeid: 2, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 3, success, outsize: 24
+unique: 2, opcode: FLUSH (25), nodeid: 2, insize: 64, pid: 98760
+flush[0]
+   unique: 2, error: -78 (Function not implemented), outsize: 16
+unique: 3, opcode: RELEASE (18), nodeid: 2, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 2, insize: 56, pid: 98760
+getattr /f01
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f02
+getattr /f02
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f02 0100644 umask=0000
+   create[0] flags: 0xa02 /f02
+fgetattr[0] /f02
+   NODEID: 3
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 3, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 3, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 3, insize: 56, pid: 98760
+getattr /f02
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f03
+getattr /f03
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f03 0100644 umask=0000
+   create[0] flags: 0xa02 /f03
+fgetattr[0] /f03
+   NODEID: 4
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 4, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 4, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 4, insize: 56, pid: 98760
+getattr /f03
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f04
+getattr /f04
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f04 0100644 umask=0000
+   create[0] flags: 0xa02 /f04
+fgetattr[0] /f04
+   NODEID: 5
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 5, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 5, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 5, insize: 56, pid: 98760
+getattr /f04
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f05
+getattr /f05
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f05 0100644 umask=0000
+   create[0] flags: 0xa02 /f05
+fgetattr[0] /f05
+   NODEID: 6
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 6, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 6, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 6, insize: 56, pid: 98760
+getattr /f05
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f06
+getattr /f06
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f06 0100644 umask=0000
+   create[0] flags: 0xa02 /f06
+fgetattr[0] /f06
+   NODEID: 7
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 7, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 7, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 7, insize: 56, pid: 98760
+getattr /f06
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f07
+getattr /f07
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f07 0100644 umask=0000
+   create[0] flags: 0xa02 /f07
+fgetattr[0] /f07
+   NODEID: 8
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 8, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 8, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 8, insize: 56, pid: 98760
+getattr /f07
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f08
+getattr /f08
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f08 0100644 umask=0000
+   create[0] flags: 0xa02 /f08
+fgetattr[0] /f08
+   NODEID: 9
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 9, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 9, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 9, insize: 56, pid: 98760
+getattr /f08
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f09
+getattr /f09
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f09 0100644 umask=0000
+   create[0] flags: 0xa02 /f09
+fgetattr[0] /f09
+   NODEID: 10
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 10, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 10, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 10, insize: 56, pid: 98760
+getattr /f09
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f10
+getattr /f10
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f10 0100644 umask=0000
+   create[0] flags: 0xa02 /f10
+fgetattr[0] /f10
+   NODEID: 11
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 11, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 11, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 11, insize: 56, pid: 98760
+getattr /f10
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f11
+getattr /f11
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f11 0100644 umask=0000
+   create[0] flags: 0xa02 /f11
+fgetattr[0] /f11
+   NODEID: 12
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 12, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 12, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 12, insize: 56, pid: 98760
+getattr /f11
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f12
+getattr /f12
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f12 0100644 umask=0000
+   create[0] flags: 0xa02 /f12
+fgetattr[0] /f12
+   NODEID: 13
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 13, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 13, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 13, insize: 56, pid: 98760
+getattr /f12
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f13
+getattr /f13
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f13 0100644 umask=0000
+   create[0] flags: 0xa02 /f13
+fgetattr[0] /f13
+   NODEID: 14
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 14, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 14, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 14, insize: 56, pid: 98760
+getattr /f13
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f14
+getattr /f14
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f14 0100644 umask=0000
+   create[0] flags: 0xa02 /f14
+fgetattr[0] /f14
+   NODEID: 15
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 15, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 15, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 15, insize: 56, pid: 98760
+getattr /f14
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f15
+getattr /f15
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f15 0100644 umask=0000
+   create[0] flags: 0xa02 /f15
+fgetattr[0] /f15
+   NODEID: 16
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 16, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 16, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 16, insize: 56, pid: 98760
+getattr /f15
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f16
+getattr /f16
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f16 0100644 umask=0000
+   create[0] flags: 0xa02 /f16
+fgetattr[0] /f16
+   NODEID: 17
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 17, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 17, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 17, insize: 56, pid: 98760
+getattr /f16
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f17
+getattr /f17
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f17 0100644 umask=0000
+   create[0] flags: 0xa02 /f17
+fgetattr[0] /f17
+   NODEID: 18
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 18, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 18, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 18, insize: 56, pid: 98760
+getattr /f17
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f18
+getattr /f18
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f18 0100644 umask=0000
+   create[0] flags: 0xa02 /f18
+fgetattr[0] /f18
+   NODEID: 19
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 19, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 19, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 19, insize: 56, pid: 98760
+getattr /f18
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f19
+getattr /f19
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f19 0100644 umask=0000
+   create[0] flags: 0xa02 /f19
+fgetattr[0] /f19
+   NODEID: 20
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 20, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 20, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 20, insize: 56, pid: 98760
+getattr /f19
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f20
+getattr /f20
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f20 0100644 umask=0000
+   create[0] flags: 0xa02 /f20
+fgetattr[0] /f20
+   NODEID: 21
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 21, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 21, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 21, insize: 56, pid: 98760
+getattr /f20
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f21
+getattr /f21
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f21 0100644 umask=0000
+   create[0] flags: 0xa02 /f21
+fgetattr[0] /f21
+   NODEID: 22
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 22, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 22, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 22, insize: 56, pid: 98760
+getattr /f21
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f22
+getattr /f22
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f22 0100644 umask=0000
+   create[0] flags: 0xa02 /f22
+fgetattr[0] /f22
+   NODEID: 23
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 23, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 23, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 23, insize: 56, pid: 98760
+getattr /f22
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f23
+getattr /f23
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f23 0100644 umask=0000
+   create[0] flags: 0xa02 /f23
+fgetattr[0] /f23
+   NODEID: 24
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 24, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 24, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 24, insize: 56, pid: 98760
+getattr /f23
+   unique: 2, success, outsize: 136
+unique: 3, opcode: LOOKUP (1), nodeid: 1, insize: 44, pid: 98760
+LOOKUP /f24
+getattr /f24
+   unique: 3, error: -2 (No such file or directory), outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98760
+getattr /
+   unique: 2, success, outsize: 136
+unique: 3, opcode: CREATE (35), nodeid: 1, insize: 60, pid: 98760
+create flags: 0xa02 /f24 0100644 umask=0000
+   create[0] flags: 0xa02 /f24
+fgetattr[0] /f24
+   NODEID: 25
+   unique: 3, success, outsize: 176
+unique: 2, opcode: WRITE (16), nodeid: 25, insize: 83, pid: 98760
+write[0] 3 bytes to 0 flags: 0x1
+   write[0] 3 bytes to 0
+   unique: 2, success, outsize: 24
+unique: 3, opcode: RELEASE (18), nodeid: 25, insize: 64, pid: 98760
+release[0] flags: 0x0
+   unique: 3, success, outsize: 16
+unique: 2, opcode: GETATTR (3), nodeid: 25, insize: 56, pid: 98760
+getattr /f24
+   unique: 2, success, outsize: 136
+unique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98732
+getattr /
+   unique: 3, success, outsize: 136
+unique: 2, opcode: OPENDIR (27), nodeid: 1, insize: 48, pid: 98732
+opendir flags: 0x0 /
+   opendir[0] flags: 0x0 /
+   unique: 2, success, outsize: 32
+unique: 3, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 98732
+statfs /
+   unique: 3, success, outsize: 96
+unique: 2, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98732
+readdir[0] from 0
+   unique: 2, success, outsize: 896
+unique: 3, opcode: READDIR (28), nodeid: 1, insize: 80, pid: 98732
+   unique: 3, success, outsize: 16
+unique: 2, opcode: RELEASEDIR (29), nodeid: 1, insize: 64, pid: 98732
+releasedir[0] flags: 0x0
+   unique: 2, success, outsize: 16
+unique: 3, opcode: GETATTR (3), nodeid: 1, insize: 56, pid: 98764
+getattr /
+   unique: 3, success, outsize: 136
+unique: 2, opcode: OPEN (14), nodeid: 2, insize: 48, pid: 98764
+open flags: 0x0 /f01
+   open[0] flags: 0x0 /f01
+   unique: 2, success, outsize: 32
+unique: 3, opcode: MONITOR (60), nodeid: 2, insize: 48, pid: 98764
+monitor /f01 1
+unique: 2, opcode: MONITOR (60), nodeid: 2, insize: 48, pid: 98764
+monitor /f01 2
+unique: 4, opcode: RELEASE (18), nodeid: 2, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 4, success, outsize: 16
+unique: 4, opcode: OPEN (14), nodeid: 3, insize: 48, pid: 98764
+open flags: 0x0 /f02
+   open[0] flags: 0x0 /f02
+   unique: 4, success, outsize: 32
+unique: 4, opcode: MONITOR (60), nodeid: 3, insize: 48, pid: 98764
+monitor /f02 1
+unique: 6, opcode: RELEASE (18), nodeid: 3, insize: 64, pid: 98764
+unique: 5, opcode: MONITOR (60), nodeid: 3, insize: 48, pid: 98764
+monitor /f02 2
+release[0] flags: 0x0
+   unique: 6, success, outsize: 16
+unique: 6, opcode: OPEN (14), nodeid: 4, insize: 48, pid: 98764
+open flags: 0x0 /f03
+   open[0] flags: 0x0 /f03
+   unique: 6, success, outsize: 32
+unique: 6, opcode: MONITOR (60), nodeid: 4, insize: 48, pid: 98764
+monitor /f03 1
+unique: 8, opcode: RELEASE (18), nodeid: 4, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 8, success, outsize: 16
+unique: 7, opcode: MONITOR (60), nodeid: 4, insize: 48, pid: 98764
+monitor /f03 2
+unique: 8, opcode: OPEN (14), nodeid: 5, insize: 48, pid: 98764
+open flags: 0x0 /f04
+   open[0] flags: 0x0 /f04
+   unique: 8, success, outsize: 32
+unique: 8, opcode: MONITOR (60), nodeid: 5, insize: 48, pid: 98764
+monitor /f04 1
+unique: 9, opcode: MONITOR (60), nodeid: 5, insize: 48, pid: 98764
+unique: 10, opcode: RELEASE (18), nodeid: 5, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 10, success, outsize: 16
+monitor /f04 2
+unique: 10, opcode: OPEN (14), nodeid: 6, insize: 48, pid: 98764
+open flags: 0x0 /f05
+   open[0] flags: 0x0 /f05
+   unique: 10, success, outsize: 32
+unique: 10, opcode: MONITOR (60), nodeid: 6, insize: 48, pid: 98764
+monitor /f05 1
+unique: 12, opcode: RELEASE (18), nodeid: 6, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 12, success, outsize: 16
+unique: 11, opcode: MONITOR (60), nodeid: 6, insize: 48, pid: 98764
+monitor /f05 2
+unique: 12, opcode: OPEN (14), nodeid: 7, insize: 48, pid: 98764
+open flags: 0x0 /f06
+   open[0] flags: 0x0 /f06
+   unique: 12, success, outsize: 32
+unique: 13, opcode: MONITOR (60), nodeid: 7, insize: 48, pid: 98764
+monitor /f06 2
+unique: 14, opcode: RELEASE (18), nodeid: 7, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 14, success, outsize: 16
+unique: 12, opcode: MONITOR (60), nodeid: 7, insize: 48, pid: 98764
+monitor /f06 1
+unique: 14, opcode: OPEN (14), nodeid: 8, insize: 48, pid: 98764
+open flags: 0x0 /f07
+   open[0] flags: 0x0 /f07
+   unique: 14, success, outsize: 32
+unique: 15, opcode: MONITOR (60), nodeid: 8, insize: 48, pid: 98764
+monitor /f07 2
+unique: 14, opcode: MONITOR (60), nodeid: 8, insize: 48, pid: 98764
+monitor /f07 1
+unique: 16, opcode: RELEASE (18), nodeid: 8, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 16, success, outsize: 16
+unique: 16, opcode: OPEN (14), nodeid: 9, insize: 48, pid: 98764
+open flags: 0x0 /f08
+   open[0] flags: 0x0 /f08
+   unique: 16, success, outsize: 32
+unique: 17, opcode: MONITOR (60), nodeid: 9, insize: 48, pid: 98764
+monitor /f08 2
+unique: 18, opcode: RELEASE (18), nodeid: 9, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 18, success, outsize: 16
+unique: 16, opcode: MONITOR (60), nodeid: 9, insize: 48, pid: 98764
+monitor /f08 1
+unique: 18, opcode: OPEN (14), nodeid: 10, insize: 48, pid: 98764
+open flags: 0x0 /f09
+   open[0] flags: 0x0 /f09
+   unique: 18, success, outsize: 32
+unique: 18, opcode: MONITOR (60), nodeid: 10, insize: 48, pid: 98764
+monitor /f09 1
+unique: 20, opcode: RELEASE (18), nodeid: 10, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 20, success, outsize: 16
+unique: 19, opcode: MONITOR (60), nodeid: 10, insize: 48, pid: 98764
+monitor /f09 2
+unique: 20, opcode: OPEN (14), nodeid: 11, insize: 48, pid: 98764
+open flags: 0x0 /f10
+   open[0] flags: 0x0 /f10
+   unique: 20, success, outsize: 32
+unique: 20, opcode: MONITOR (60), nodeid: 11, insize: 48, pid: 98764
+monitor /f10 1
+unique: 22, opcode: RELEASE (18), nodeid: 11, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 22, success, outsize: 16
+unique: 21, opcode: MONITOR (60), nodeid: 11, insize: 48, pid: 98764
+monitor /f10 2
+unique: 22, opcode: OPEN (14), nodeid: 12, insize: 48, pid: 98764
+open flags: 0x0 /f11
+   open[0] flags: 0x0 /f11
+   unique: 22, success, outsize: 32
+unique: 23, opcode: MONITOR (60), nodeid: 12, insize: 48, pid: 98764
+monitor /f11 2
+unique: 22, opcode: MONITOR (60), nodeid: 12, insize: 48, pid: 98764
+monitor /f11 1
+unique: 24, opcode: RELEASE (18), nodeid: 12, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 24, success, outsize: 16
+unique: 24, opcode: OPEN (14), nodeid: 13, insize: 48, pid: 98764
+open flags: 0x0 /f12
+   open[0] flags: 0x0 /f12
+   unique: 24, success, outsize: 32
+unique: 25, opcode: MONITOR (60), nodeid: 13, insize: 48, pid: 98764
+monitor /f12 2
+unique: 26, opcode: RELEASE (18), nodeid: 13, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 26, success, outsize: 16
+unique: 24, opcode: MONITOR (60), nodeid: 13, insize: 48, pid: 98764
+monitor /f12 1
+unique: 26, opcode: OPEN (14), nodeid: 14, insize: 48, pid: 98764
+open flags: 0x0 /f13
+   open[0] flags: 0x0 /f13
+   unique: 26, success, outsize: 32
+unique: 27, opcode: MONITOR (60), nodeid: 14, insize: 48, pid: 98764
+monitor /f13 2
+unique: 28, opcode: RELEASE (18), nodeid: 14, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 28, success, outsize: 16
+unique: 26, opcode: MONITOR (60), nodeid: 14, insize: 48, pid: 98764
+monitor /f13 1
+unique: 28, opcode: OPEN (14), nodeid: 15, insize: 48, pid: 98764
+open flags: 0x0 /f14
+   open[0] flags: 0x0 /f14
+   unique: 28, success, outsize: 32
+unique: 29, opcode: MONITOR (60), nodeid: 15, insize: 48, pid: 98764
+monitor /f14 2
+unique: 30, opcode: RELEASE (18), nodeid: 15, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 30, success, outsize: 16
+unique: 28, opcode: MONITOR (60), nodeid: 15, insize: 48, pid: 98764
+monitor /f14 1
+unique: 30, opcode: OPEN (14), nodeid: 16, insize: 48, pid: 98764
+open flags: 0x0 /f15
+   open[0] flags: 0x0 /f15
+   unique: 30, success, outsize: 32
+unique: 31, opcode: MONITOR (60), nodeid: 16, insize: 48, pid: 98764
+monitor /f15 2
+unique: 32, opcode: RELEASE (18), nodeid: 16, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 32, success, outsize: 16
+unique: 30, opcode: MONITOR (60), nodeid: 16, insize: 48, pid: 98764
+monitor /f15 1
+unique: 32, opcode: OPEN (14), nodeid: 17, insize: 48, pid: 98764
+open flags: 0x0 /f16
+   open[0] flags: 0x0 /f16
+   unique: 32, success, outsize: 32
+unique: 33, opcode: MONITOR (60), nodeid: 17, insize: 48, pid: 98764
+monitor /f16 2
+unique: 34, opcode: RELEASE (18), nodeid: 17, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 34, success, outsize: 16
+unique: 32, opcode: MONITOR (60), nodeid: 17, insize: 48, pid: 98764
+monitor /f16 1
+unique: 34, opcode: OPEN (14), nodeid: 18, insize: 48, pid: 98764
+open flags: 0x0 /f17
+   open[0] flags: 0x0 /f17
+   unique: 34, success, outsize: 32
+unique: 34, opcode: MONITOR (60), nodeid: 18, insize: 48, pid: 98764
+monitor /f17 1
+unique: 35, opcode: MONITOR (60), nodeid: 18, insize: 48, pid: 98764
+monitor /f17 2
+unique: 36, opcode: RELEASE (18), nodeid: 18, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 36, success, outsize: 16
+unique: 36, opcode: OPEN (14), nodeid: 19, insize: 48, pid: 98764
+open flags: 0x0 /f18
+   open[0] flags: 0x0 /f18
+   unique: 36, success, outsize: 32
+unique: 36, opcode: MONITOR (60), nodeid: 19, insize: 48, pid: 98764
+monitor /f18 1
+unique: 38, opcode: RELEASE (18), nodeid: 19, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 38, success, outsize: 16
+unique: 37, opcode: MONITOR (60), nodeid: 19, insize: 48, pid: 98764
+monitor /f18 2
+unique: 38, opcode: OPEN (14), nodeid: 20, insize: 48, pid: 98764
+open flags: 0x0 /f19
+   open[0] flags: 0x0 /f19
+   unique: 38, success, outsize: 32
+unique: 38, opcode: MONITOR (60), nodeid: 20, insize: 48, pid: 98764
+monitor /f19 1
+unique: 39, opcode: MONITOR (60), nodeid: 20, insize: 48, pid: 98764
+monitor /f19 2
+unique: 40, opcode: RELEASE (18), nodeid: 20, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 40, success, outsize: 16
+unique: 40, opcode: OPEN (14), nodeid: 21, insize: 48, pid: 98764
+open flags: 0x0 /f20
+   open[0] flags: 0x0 /f20
+   unique: 40, success, outsize: 32
+unique: 40, opcode: MONITOR (60), nodeid: 21, insize: 48, pid: 98764
+monitor /f20 1
+unique: 41, opcode: MONITOR (60), nodeid: 21, insize: 48, pid: 98764
+monitor /f20 2
+unique: 42, opcode: RELEASE (18), nodeid: 21, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 42, success, outsize: 16
+unique: 42, opcode: OPEN (14), nodeid: 22, insize: 48, pid: 98764
+open flags: 0x0 /f21
+   open[0] flags: 0x0 /f21
+   unique: 42, success, outsize: 32
+unique: 43, opcode: MONITOR (60), nodeid: 22, insize: 48, pid: 98764
+monitor /f21 2
+unique: 42, opcode: MONITOR (60), nodeid: 22, insize: 48, pid: 98764
+monitor /f21 1
+unique: 44, opcode: RELEASE (18), nodeid: 22, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 44, success, outsize: 16
+unique: 44, opcode: OPEN (14), nodeid: 23, insize: 48, pid: 98764
+open flags: 0x0 /f22
+   open[0] flags: 0x0 /f22
+   unique: 44, success, outsize: 32
+unique: 45, opcode: MONITOR (60), nodeid: 23, insize: 48, pid: 98764
+monitor /f22 2
+unique: 44, opcode: MONITOR (60), nodeid: 23, insize: 48, pid: 98764
+monitor /f22 1
+unique: 46, opcode: RELEASE (18), nodeid: 23, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 46, success, outsize: 16
+unique: 46, opcode: OPEN (14), nodeid: 24, insize: 48, pid: 98764
+open flags: 0x0 /f23
+   open[0] flags: 0x0 /f23
+   unique: 46, success, outsize: 32
+unique: 47, opcode: MONITOR (60), nodeid: 24, insize: 48, pid: 98764
+monitor /f23 2
+unique: 48, opcode: RELEASE (18), nodeid: 24, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 48, success, outsize: 16
+unique: 46, opcode: MONITOR (60), nodeid: 24, insize: 48, pid: 98764
+monitor /f23 1
+unique: 48, opcode: OPEN (14), nodeid: 25, insize: 48, pid: 98764
+open flags: 0x0 /f24
+   open[0] flags: 0x0 /f24
+   unique: 48, success, outsize: 32
+unique: 49, opcode: MONITOR (60), nodeid: 25, insize: 48, pid: 98764
+monitor /f24 2
+unique: 50, opcode: RELEASE (18), nodeid: 25, insize: 64, pid: 98764
+release[0] flags: 0x0
+   unique: 50, success, outsize: 16
+unique: 48, opcode: MONITOR (60), nodeid: 25, insize: 48, pid: 98764
+monitor /f24 1
+unique: 50, opcode: GETATTR (3), nodeid: 2, insize: 56, pid: 340
+getattr /f01
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 3, insize: 56, pid: 340
+getattr /f02
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 4, insize: 56, pid: 340
+getattr /f03
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 5, insize: 56, pid: 340
+getattr /f04
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 6, insize: 56, pid: 340
+getattr /f05
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 7, insize: 56, pid: 340
+getattr /f06
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 8, insize: 56, pid: 340
+getattr /f07
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 9, insize: 56, pid: 340
+getattr /f08
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 10, insize: 56, pid: 340
+getattr /f09
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 11, insize: 56, pid: 340
+getattr /f10
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 12, insize: 56, pid: 340
+getattr /f11
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 13, insize: 56, pid: 340
+getattr /f12
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 14, insize: 56, pid: 340
+getattr /f13
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 15, insize: 56, pid: 340
+getattr /f14
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 16, insize: 56, pid: 340
+getattr /f15
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 17, insize: 56, pid: 340
+getattr /f16
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 18, insize: 56, pid: 340
+getattr /f17
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 19, insize: 56, pid: 340
+getattr /f18
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 20, insize: 56, pid: 340
+getattr /f19
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 21, insize: 56, pid: 340
+getattr /f20
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 22, insize: 56, pid: 340
+getattr /f21
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 23, insize: 56, pid: 340
+getattr /f22
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 24, insize: 56, pid: 340
+getattr /f23
+   unique: 50, success, outsize: 136
+unique: 50, opcode: GETATTR (3), nodeid: 25, insize: 56, pid: 340
+getattr /f24
+   unique: 50, success, outsize: 136
+unique: 50, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 50, success, outsize: 96
+unique: 50, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 694
+statfs /
+   unique: 50, success, outsize: 96
+unique: 50, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 693
+statfs /
+   unique: 50, success, outsize: 96
+unique: 50, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 693
+statfs /
+   unique: 50, success, outsize: 96
+unique: 50, opcode: STATFS (17), nodeid: 1, insize: 40, pid: 693
+statfs /
+   unique: 50, success, outsize: 96
+unique: 50, opcode: FORGET (2), nodeid: 25, insize: 48, pid: 98778
+FORGET 25/1
+DELETE: 25
+unique: 51, opcode: FORGET (2), nodeid: 24, insize: 48, pid: 98778
+FORGET 24/1
+DELETE: 24
+unique: 52, opcode: FORGET (2), nodeid: 22, insize: 48, pid: 98778
+FORGET 22/1
+DELETE: 22
+unique: 53, opcode: FORGET (2), nodeid: 20, insize: 48, pid: 98778
+FORGET 20/1
+DELETE: 20
+unique: 51, opcode: FORGET (2), nodeid: 21, insize: 48, pid: 98778
+FORGET 21/1
+DELETE: 21
+unique: 55, opcode: FORGET (2), nodeid: 17, insize: 48, pid: 98778
+FORGET 17/1
+DELETE: 17
+unique: 50, opcode: FORGET (2), nodeid: 18, insize: 48, pid: 98778
+unique: 52, opcode: FORGET (2), nodeid: 16, insize: 48, pid: 98778
+FORGET 16/1
+DELETE: 16
+unique: 50, opcode: FORGET (2), nodeid: 23, insize: 48, pid: 98778
+FORGET 18/1
+DELETE: 18
+unique: 51, opcode: FORGET (2), nodeid: 15, insize: 48, pid: 98778
+FORGET 23/1
+DELETE: 23
+unique: 56, opcode: FORGET (2), nodeid: 14, insize: 48, pid: 98778
+FORGET 14/1
+unique: 54, opcode: FORGET (2), nodeid: 19, insize: 48, pid: 98778
+FORGET 19/1
+unique: 57, opcode: FORGET (2), nodeid: 13, insize: 48, pid: 98778
+FORGET 13/1
+FORGET 15/1
+DELETE: 14
+unique: 58, opcode: FORGET (2), nodeid: 12, insize: 48, pid: 98778
+FORGET 12/1
+DELETE: 19
+DELETE: 13
+unique: 59, opcode: FORGET (2), nodeid: 11, insize: 48, pid: 98778
+FORGET 11/1
+DELETE: 15
+unique: 61, opcode: FORGET (2), nodeid: 9, insize: 48, pid: 98778
+FORGET 9/1
+unique: 60, opcode: FORGET (2), nodeid: 10, insize: 48, pid: 98778
+FORGET 10/1
+DELETE: 12
+unique: 62, opcode: FORGET (2), nodeid: 8, insize: 48, pid: 98778
+FORGET 8/1
+DELETE: 11
+DELETE: 9
+unique: 63, opcode: FORGET (2), nodeid: 7, insize: 48, pid: 98778
+FORGET 7/1
+unique: 64, opcode: FORGET (2), nodeid: 6, insize: 48, pid: 98778
+FORGET 6/1
+DELETE: 10
+DELETE: 8
+unique: 65, opcode: FORGET (2), nodeid: 5, insize: 48, pid: 98778
+FORGET 5/1
+unique: 66, opcode: FORGET (2), nodeid: 4, insize: 48, pid: 98778
+FORGET 4/1
+DELETE: 7
+unique: 67, opcode: FORGET (2), nodeid: 3, insize: 48, pid: 98778
+FORGET 3/1
+DELETE: 6
+unique: 68, opcode: FORGET (2), nodeid: 2, insize: 48, pid: 98778
+FORGET 2/1
+DELETE: 5
+unique: 69, opcode: DESTROY (38), nodeid: 1, insize: 40, pid: 98778
+DELETE: 4
+   unique: 69, success, outsize: 16
+DELETE: 3
+DELETE: 2

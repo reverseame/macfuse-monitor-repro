@@ -1,0 +1,15 @@
+# Build products
+memfs-513
+memfs-550
+kqwatch
+*.dSYM/
+
+# Downloaded third-party macFUSE files (fetched by scripts/fetch-macfuse.sh)
+v513/
+
+# Run-time artifacts
+logs/
+mnt-513/
+mnt-550/
+
+.DS_Store
