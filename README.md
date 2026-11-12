@@ -14,12 +14,12 @@ FUSE volume** (every worker thread parked in `forget_node()`, nobody reading
 | Fixed | macFUSE **5.3.1** (June 13, 2026) |
 | Introduced by | [`67aa41ee`](https://github.com/macfuse/library/commit/67aa41ee6c8456180526e1023217a1c6a3eff921) "Add support for FUSE_MONITOR message on macOS" (Oct 23, 2025) |
 | Fixed by | [`c3ff8d98`](https://github.com/macfuse/library/commit/c3ff8d98e06c7194591dbf8076da4ada1c97f519) "Add missing free_path() call in fuse_lib_monitor()" (Jun 8, 2026) |
-| Impact | Local denial of service of the FUSE volume ([CWE-772](https://cwe.mitre.org/data/definitions/772.html) leading to [CWE-833](https://cwe.mitre.org/data/definitions/833.html)) |
+| Impact | Local denial of service of the FUSE volume ([CWE-764](https://cwe.mitre.org/data/definitions/764.html), also [CWE-772](https://cwe.mitre.org/data/definitions/772.html)) |
 | Trigger | Any process that can open a file on the volume: `open(O_EVTONLY)` + a kqueue `EVFILT_VNODE` filter |
 
 The full story (shutdown-stall forensics, source and binary analysis) is in our
-blog post *"Watch Out for Your Watchers: How a PDF Preview Froze Our Encrypted
-Folders (and a One-Line Bug in macFUSE)"* on [reversea.me](https://reversea.me/).
+blog post *"Watch Out for Your Watchers: How a File-Watch Bug Froze Our
+Encrypted Folders (and a One-Line Bug in macFUSE)"* on [reversea.me](https://reversea.me/).
 
 > **This is a PoC for an already public and fixed bug.** It only mounts and
 > freezes its own throwaway in-memory file systems, never your existing
@@ -211,10 +211,12 @@ In fixed releases, `free_path()` is inlined right after the call to
   `defaults read /Library/Filesystems/macfuse.fs/Contents/Info.plist CFBundleShortVersionString`.
   File system daemons that were already running keep the old library loaded
   until they are restarted.
-* **Diagnosing a frozen volume**: `sample <pid> 1` on the file system daemon.
-  Worker threads parked in `pthread_cond_wait` under the `FORGET` handler are
-  the signature of this bug. `kill -9` on the daemon followed by `umount -f`
-  recovers the mount point without rebooting.
+* **Diagnosing a frozen volume**: run `sample <pid> 1` on the file system
+  daemon. Workers parked in `pthread_cond_wait` under the `FORGET` handler are
+  consistent with an unreleased high-level path lock. Confirm an affected
+  macFUSE version and `MONITOR` followed by `QUEUE PATH (forget)` in the debug
+  log before attributing the freeze to this bug. In our tests, `kill -9` on the
+  daemon followed by `umount -f` recovered the mount point without rebooting.
 
 ## References
 
